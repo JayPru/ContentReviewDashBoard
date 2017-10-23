@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+	<!--[if gte mso 9]><xml>
+	<mso:CustomDocumentProperties>
+	<mso:_dlc_DocId msdt:dt="string">7QM5D67UUUJV-3-1395</mso:_dlc_DocId>
+	<mso:_dlc_DocIdItemGuid msdt:dt="string">8e883f9f-f279-44aa-a07e-b5f34da8eaea</mso:_dlc_DocIdItemGuid>
+	<mso:_dlc_DocIdUrl msdt:dt="string">http://insidetaxo.niaid.nih.gov/_layouts/DocIdRedir.aspx?ID=7QM5D67UUUJV-3-1395, 7QM5D67UUUJV-3-1395</mso:_dlc_DocIdUrl>
+	<mso:RoleGroupEmail msdt:dt="string"></mso:RoleGroupEmail><mso:ContentTypeId msdt:dt="string">0x010100D571AB29CC2E0B429755D203EC23AB9D</mso:ContentTypeId><mso:ContentType msdt:dt="string">Document</mso:ContentType><mso:Approval_x0020_Level msdt:dt="string"></mso:Approval_x0020_Level><mso:Categories msdt:dt="string"></mso:Categories><mso:Assigned_x0020_To msdt:dt="string"></mso:Assigned_x0020_To><mso:Archive msdt:dt="string">0</mso:Archive><mso:RoleSME msdt:dt="string"></mso:RoleSME>
+	<mso:RoleEditor msdt:dt="string"></mso:RoleEditor>
+	<mso:RoleUberOwner msdt:dt="string">20;#NIH\litsingera</mso:RoleUberOwner>
+	<mso:RoleCurator msdt:dt="string">14655;#Koya, Deepika (NIH/NIAID) [C]</mso:RoleCurator>
+	<mso:RoleOwner msdt:dt="string"></mso:RoleOwner>
+	<mso:RoleWriter msdt:dt="string"></mso:RoleWriter>
+	<mso:RoleCoordinator msdt:dt="string">20;#Litsinger, Alice (NIH/NIAID) [E];#18;#Garten, Tori (NIH/NIAID) [E];#14284;#Derese, Tigist (NIH/NIAID) [C];#2125;#Modlin, Sheryl (NIH/NIAID) [E]</mso:RoleCoordinator>
+	<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_RoleCoordinator msdt:dt="string">Litsinger, Alice (NIH/NIAID) [E];Garten, Tori (NIH/NIAID) [E];Derese, Tigist (NIH/NIAID) [C];Modlin, Sheryl (NIH/NIAID) [E]</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_RoleCoordinator>
+	<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_RoleCurator msdt:dt="string">Koya, Deepika (NIH/NIAID) [C]</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_RoleCurator>
+	<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_RoleUberOwner msdt:dt="string">Litsinger, Alice (NIH/NIAID) [E]</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_RoleUberOwner>
+	<mso:m5617882f6b141a4977c0927fb9b51d3 msdt:dt="string"></mso:m5617882f6b141a4977c0927fb9b51d3>
+	<mso:b94d299a2e6147c286350c3f8eb884b0 msdt:dt="string"></mso:b94d299a2e6147c286350c3f8eb884b0>
+	<mso:NIAIDMMTopicShadow msdt:dt="string"></mso:NIAIDMMTopicShadow>
+	<mso:NIAIDMMDocumentType msdt:dt="string"></mso:NIAIDMMDocumentType>
+	<mso:g8985b07c95247c28b321b638e73bcb3 msdt:dt="string"></mso:g8985b07c95247c28b321b638e73bcb3>
+	<mso:NIAIDMMTopic msdt:dt="string"></mso:NIAIDMMTopic>
+	<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+	<mso:NIAIDMMSponsoringOrg msdt:dt="string"></mso:NIAIDMMSponsoringOrg>
+	<mso:NIAIDMMSponsoringOrgShadow msdt:dt="string"></mso:NIAIDMMSponsoringOrgShadow>
+	<mso:n353f4d4a57f4c5e861994e7b83feb70 msdt:dt="string"></mso:n353f4d4a57f4c5e861994e7b83feb70>
+	<mso:a408bdf5d9ca430e9a60f99c9f9e3e05 msdt:dt="string"></mso:a408bdf5d9ca430e9a60f99c9f9e3e05>
+	</mso:CustomDocumentProperties></xml><![endif]-->
+	
+	<title></title>
+	<!--link href="/JavaScriptFiles/ExportToExcel/css/bootstrap.min.css" rel="stylesheet">
+			<link href="/JavaScriptFiles/ExportToExcel/css/tableexport.min.css" rel="stylesheet"-->
+	</head>
+	<body>
+<div id="StatusMessages"></div>
+<table id="CRDB_FutureReviewDeadline" ></table>
+<button id="exporttbl1" style="text-align:right">Future Review Table Data</button>
+<!--div style="width:100%;text-align:right"><a href="AllDocumentsSearch.aspx?RenderAs=MSExcel">Export to Excel Upcoming Reviews</a></div-->
+
+<br/><br/>
+<table id="CRDB_PastReviewDeadline" ></table>
+<button id="exportbl2" style="text-align:right">Past Review Table Data</button><!--div style="width:100%;text-align:right"><a href="AllDocumentsSearch.aspx?RenderAs=MSExcel">Export to Excel Past Due Reviews</a></div-->
+
+<link href="/JavaScriptFiles/CRDBv5/css/ui.jqgrid.css" rel="stylesheet" type="text/css">
+<link href="/JavaScriptFiles/CRDBv3/css/redmond/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css">
+<!--script type="text/javascript" src="/JavaScriptFiles/CRDBv5/js/i18n/grid.locale-en.js"></script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.4/jszip.min.js"></script>
+<script data-main="/JavaScriptFiles/CRDBv5/requireconfig"  src="/JavaScriptFiles/CRDBv5/require.min.js"></script>
+
+
+<br/><br/>
+ <table>
+ 	<tr>
+	<td>
+		<div id="barChart"></div>  
+	</td></tr>
+	<tr><td style="height:30px;">&nbsp;</td></tr>
+	<tr><td>
+		<div id="magicalPieChart"></div>
+	</td>
+	</tr>
+	
+</table> 
+
+
+ <script src="/JavaScriptFiles/CRDBv5/excanvas.min.js"></script> 
+
+
+
+<script type="text/javascript">
+ 
+	$(document).ready
+	( 
+
+		function () 
+		{
+			
+			require.config 
+			( 
+				{
+					//waitSeconds:300,
+					shim: 
+					{
+				        moment: {
+				            exports: 'moment'
+				        },
+				        flotcat: {
+				        	deps: [ 'flot' ]
+				        },
+				        flotpie: {
+				        	deps: [ 'flot' ]
+				        },
+				        grid: {
+				        	deps: [ 'gridlocale' ]
+				        }
+				    },
+				    paths: 
+				    {
+				        moment: 	"//cdnjs.cloudflare.com/ajax/libs/moment.js/2.3.1/moment", 
+				        flot: 		"//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min",
+				        flotcat:    "//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.categories.min",
+				        flotpie:    "//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.pie.min", 
+				        crdblogic: 	"/JavaScriptFiles/CRDBv5/ContentReviewDashboard",
+						gridlocale: "/JavaScriptFiles/CRDBv5/js/i18n/grid.locale-en",
+						grid: 		"/JavaScriptFiles/CRDBv5/js/jquery.jqGrid.min",
+						
+				        //gridlocale: "/JavaScriptFiles/CRDBv5/js/i18n/grid.locale-en",
+				        jqueryui: 	"//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min"
+
+				    }
+				}
+			);
+			
+			if(typeof JSONListData == 'object' && JSONListData != null)
+			{			
+				require( [ "jqueryui", "moment", "flot", "flotcat","flotpie", "grid", "gridlocale", "crdblogic" ], 
+							function (  ) 
+							{
+			
+								var crdb = new NIAID.CRDB.UI();
+								
+								//crdb.pieChart.destroy();
+								//crdb.barChart.destroy();
+
+								crdb.futureReviewGrid = $("#CRDB_FutureReviewDeadline");
+								crdb.pastReviewGrid = $("#CRDB_PastReviewDeadline");
+								crdb.statusMessages = $("#StatusMessages");
+								
+								crdb.pieChart = $("#magicalPieChart") ;
+								crdb.barChart = $("#barChart");
+					
+								crdb.chartHeight = "300px" ;
+					
+								crdb.currentDate = new Date();
+								//crdb.currentReviewDeadline = moment(crdb.currentDate).add(1, "y");
+			
+								crdb.rowNum = 30000 ;
+								
+									
+								crdb.configureGrid() ;
+								//alert(JSONListData.length);
+								/*for (var i = 0; i < JSONListData.length; i++)
+								{
+								alert(JSONListData[i].NIAIDADDSEncodedAbsURL);
+								}*/
+								
+								crdb.getResults(JSONListData);
+							}
+						);
+			}
+		}	
+		
+		
+	);	
+	
+	
+</script>
+</body>
+</html>
